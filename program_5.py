@@ -14,9 +14,9 @@ def main():
             break
         else:
             total = total + spent
-    print("You total you spent is: $", round(total))
     difference = budget - total
-    print("Your difference is: $", round(difference))
+    print("Your difference is:")
+    print(round(difference))
     if difference < 0:
         print("You don't have enough money!")
     else:
