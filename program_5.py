@@ -6,14 +6,27 @@
 # user is over or under budget.
 
 def main():
-    budget = 0.0
-    difference = 0.0
-    spent = 1.0         #initialize for while loop
     total = 0.0
+    budget = int(input("What is your budget for the month?"))
+    while True:
+        spent = int(input("What were your expenses?"))
+        if spent == 0:
+            break
+        else:
+            total = total + spent
+    difference = budget - total
+    print(str(round(difference)))
+    if difference < 0:
+        print("You don't have enough money!")
+    else:
+        print("You have money!")
 
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
+
+
+
+
+
+
 
 
 if __name__ == '__main__':

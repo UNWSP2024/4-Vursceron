@@ -5,10 +5,14 @@
 # Use either a "for loop" or "while loop" to accomplish this.
 
 def main():
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
-
-
+    ticket_count = 0
+    while True:
+        input("What movie do you want to see? " )
+        ticket = int(input("How many tickets do you want? "))
+        ticket_count += ticket
+        answer = input("Do you want to see more movies (Y,N)? ")
+        if answer != 'Y' or answer != 'y':
+            break
+    print("The total amount of tickets you want is:", ticket_count)
 if __name__ == '__main__':
     main()
