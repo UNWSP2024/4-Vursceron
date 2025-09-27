@@ -1,0 +1,21 @@
+budget = 0.0
+difference = 0.0
+spent = 1.0
+total = 0.0
+budget = input ("What is your budget for the month?")
+while True
+    expense = prompt user for expense ("What were your expenses?")
+    If expense = 0
+        break
+    else
+        total = total + expense
+print = expenses
+difference = budget - expenses
+    print = difference
+if difference < 0
+    print ("you're under budget!")
+else
+    print ("you're doing good.")
+
+
+
